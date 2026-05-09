@@ -1,139 +1,83 @@
 # Portfolio Website - Sai Datta Manikanta Gowthu
 
-A modern, responsive portfolio website showcasing my projects, experience, certifications, and coding profiles. Built with clean HTML, CSS, and JavaScript with a focus on user experience and performance.
+A responsive personal portfolio website built from scratch with the original light green visual style, updated to include the required responsive navigation, scroll animations, parallax motion, and accessible reduced-motion handling.
 
-## 🚀 Features
+## Tech Stack
 
-- **Responsive Design** - Fully responsive layout that works seamlessly across all devices
-- **Modern UI** - Clean, professional design with smooth animations and transitions
-- **Project Showcase** - Detailed project cards with live previews and GitHub links
-- **Experience Section** - Professional work experience with detailed descriptions
-- **Certifications** - Visual display of professional certifications and achievements
-- **Coding Profiles** - Links to competitive programming profiles (LeetCode, CodeChef, HackerRank, GeeksforGeeks, CodeForces)
-- **Contact Form** - Functional contact form integrated with Web3Forms
-- **About Page** - Detailed information about skills and background
-- **Performance Optimized** - Fast loading with minimal dependencies
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Font Awesome
 
-## 🛠️ Technologies Used
+## Live Site
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with CSS variables, flexbox, and grid
-- **JavaScript** - Interactive functionality
-- **Font Awesome** - Icon library
-- **Web3Forms** - Contact form backend
-- **Git/GitHub** - Version control and hosting
+- https://gowthusaidatta.github.io/my_project/
 
-## 📁 Project Structure
+## Local Setup
 
-```
-protofilo/
-├── index.html          # Main homepage
-├── about2.html         # About page
-├── contact.html        # Contact page
-├── styles.css          # Main stylesheet
-├── script.js           # JavaScript functionality
-└── README.md           # Project documentation
+1. Clone the repository.
+2. Open the project folder.
+3. Run a local server from this directory.
+
+Example:
+
+```bash
+npx http-server -p 8000
 ```
 
-## 🎨 Design Highlights
+Or, if you have Python installed:
 
-- **Color Scheme**: Light theme with lime green accent (#80cc2e)
-- **Typography**: Clean, readable Segoe UI font family
-- **Layout**: Grid-based responsive layout
-- **Glassmorphism**: Subtle backdrop blur effects
-- **Smooth Transitions**: Hover effects and animations
+```bash
+python -m http.server 8000
+```
 
-## 📦 Installation & Setup
+Then open `http://localhost:8000` in your browser.
 
-### Local Development
+## Notes
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/gowthusaidatta/my_project.git
-   cd my_project
-   ```
+- The portfolio keeps the older light green palette and original images/details.
+- The site includes Hero, About, Skills, Projects, Experience, Profiles, and Contact sections.
+- Motion is limited to transform and opacity, with reduced-motion support enabled.
+# V V Satya Sai Datta Manikanta Gowthu - Portfolio Website
 
-2. **Open with a local server** (recommended)
-   
-   Using Node.js:
-   ```bash
-   npx http-server -p 8000
-   ```
-   
-   Using Python:
-   ```bash
-   python -m http.server 8000
-   ```
+A responsive personal portfolio website built from scratch with a strong visual hierarchy, custom motion, and a polished single-page layout. The site includes the required Hero, About, Skills, Projects, Contact, and Footer sections, plus a parallax effect and scroll-triggered reveals.
 
-3. **Open in browser**
-   ```
-   http://localhost:8000
-   ```
+## Tech Stack
 
-### Direct File Opening
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Font Awesome
 
-You can also open `index.html` directly in your browser, though a local server is recommended for best results.
+## Live Site
 
-## 🌐 Live Demo
+- https://gowthusaidatta.github.io/my_project/
 
-Visit the live website: [Portfolio Link](https://gowthusaidatta.github.io/my_project/)
+## Local Setup
 
-## 📋 Sections
+1. Clone the repository.
+2. Open the project folder.
+3. Run a local server from this directory.
 
-### Home
-- Hero section with introduction
-- Quick links to email, LinkedIn, and contact form
-- Technology badges
+Example:
 
-### Projects
-- **CodeSync** - Coding analytics platform with AWS deployment
-- **Student Photo Downloader** - Web application with form validation
-- **StayHub** - Property rental finder with Firebase backend
+```bash
+npx http-server -p 8000
+```
 
-### Experience
-- AWS Intern at Technical Hub Pvt. Ltd.
+Or, if you have Python installed:
 
-### Certifications
-- Red Hat Certified System Administrator (RHCSA)
-- IT Specialist - HTML and CSS
-- Java Certified Foundations Associate
-- Oracle Cloud Infrastructure 2025 Certified Generative AI Professional
-- Python Essentials 1 (Cisco)
-- Red Hat System Administration II
-- 50+ Google Cloud Skill Badges
+```bash
+python -m http.server 8000
+```
 
-### Coding Profiles
-- LeetCode
-- CodeChef
-- HackerRank
-- GeeksforGeeks
-- CodeForces
+Then open `http://localhost:8000` in your browser.
 
-### Contact
-- Email: saidattagowthu@gmail.com
-- Phone: +91 9573448222
-- Functional contact form
+## Project Notes
 
-## 🤝 Contributing
-
-This is a personal portfolio project. However, if you find any bugs or have suggestions, feel free to:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a Pull Request
-
-## 📧 Contact
-
-**Sai Datta Manikanta Gowthu**
-- Email: saidattagowthu@gmail.com
-- LinkedIn: [Profile](https://www.linkedin.com/in/v-v-satya-sai-datta-manikanta-gowthu-41709b291/)
-- GitHub: [@gowthusaidatta](https://github.com/gowthusaidatta)
-
-## 📄 License
-
-© 2026 Sai Datta Manikanta Gowthu. All rights reserved.
-
----
-
-⭐ If you found this project helpful, please consider giving it a star!
+- Built to satisfy the portfolio assignment requirements.
+- Includes responsive navigation for mobile screens.
+- Uses reduced-motion handling for accessibility.
+- Uses scroll reveals, staggered card motion, and a subtle parallax layer.
