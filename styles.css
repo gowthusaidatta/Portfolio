@@ -425,6 +425,30 @@ button {
   padding: 1.5rem;
 }
 
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.card-icon {
+  margin-top: 0.15rem;
+  color: var(--accent-dark);
+  font-size: 1.35rem;
+  flex: 0 0 auto;
+}
+
+.cert-head {
+  align-items: center;
+}
+
+.cert-logo {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
 .project-head h3,
 .card-head h3 {
   margin: 0;
@@ -476,6 +500,30 @@ button {
   margin-bottom: 0.55rem;
 }
 
+.Certify-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.Certify-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.35rem 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .profiles-grid {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -489,14 +537,47 @@ button {
   transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
-.profile-card i {
-  width: 3rem;
-  height: 3rem;
+.profile-icon {
+  width: 4rem;
+  height: 4rem;
   display: grid;
   place-items: center;
   border-radius: 14px;
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.profile-logo {
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: contain;
+}
+
+.profile-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.leetcode-icon {
+  border-color: rgba(246, 168, 20, 0.45);
+}
+
+.codechef-icon {
+  border-color: rgba(87, 75, 68, 0.35);
+}
+
+.hackerrank-icon {
+  border-color: rgba(31, 166, 78, 0.35);
+}
+
+.geeksforgeeks-icon {
+  border-color: rgba(0, 160, 75, 0.35);
+}
+
+.codeforces-icon {
+  border-color: rgba(32, 70, 137, 0.35);
 }
 
 .profile-card:hover,
