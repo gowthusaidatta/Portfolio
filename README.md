@@ -85,6 +85,19 @@ A GitHub Actions workflow (`.github/workflows/ci.yml`) is included. On push to `
 
 You can view the Lighthouse report artifact from the workflow run to inspect performance metrics.
 
+## Vercel deployment
+
+The repository includes a `vercel.json` so Vercel can build the app with `npm run build` and serve the `dist` output.
+
+To deploy:
+
+1. Import the GitHub repository in Vercel.
+2. Keep the default build command and output directory, or use the values in `vercel.json`.
+3. Deploy the `main` branch for production.
+4. Add the live URL here after the first successful deploy.
+
+If you change routes or add a client-side router later, update `vercel.json` to include rewrites.
+
 
 The app is served by Vite and mounts in `index.html` to the `#root` element.
 
