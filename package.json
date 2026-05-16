@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node ./node_modules/vite/bin/vite.js build",
     "preview": "vite preview",
     "optimize-images": "npx imagemin \"images_&_logos/*.{jpg,png,jpeg}\" --out-dir=public/images_optimized",
     "serve-dist": "npx http-server ./dist -p 8080"
