@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css?v=1.1"> <!-- Linking your dark-themed CSS -->
+ <head>
+  <title>
+   About Me
+  </title>
+  <style>
+   body {
+            margin: 0;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            padding: 3rem;
+        }
+        .left {
+            background-color: #2ecc71;
+            color: black;
+            padding: 50px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .left p {
+            font-style: italic;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .right img {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .right p {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                flex: none;
+                width: 100%;
+                padding: 20px;
+            }
+            .right img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#home" class="logo"><img href="index.html#home" src="https://raw.githubusercontent.com/gowthusaidatta/codesoft/main/loogo.png" alt="SD"></a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#certifications">Certifications</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+   <div class="left">
+    <h1>
+     About Me
+    </h1>
+    <p>
+      Hello! I'm <span class="highlight">SAI DATTA MANIKANTA GOWTHU</span>, a Computer Science (IoT) student focused on backend engineering, cloud-native systems, and full-stack web development.</p>
+    <p>I specialize in <span id="element"></span></p>
+    
+    <p>
+      I build scalable applications with AWS (Lambda, API Gateway, S3), React.js, and Firebase, and I love solving problems with Java and Python. Recent work includes the CodeSync coding analytics platform, StayHub rental finder, and a student photo downloader. I'm passionate about production-ready systems, clean APIs, and data-driven decisions.
+    </p>
+    <p>
+      Let's collaborate on cloud, backend, or full-stack projects that make an impact.
+    </p>
+   </div>
+   <div class="right">
+    <img src="https://raw.githubusercontent.com/gowthusaidatta/codesoft/main/23MH1A4918.png" alt="Profile" class="profile-img">
+    <p><strong>Email:</strong> saidattagowthu@gmail.com</p>
+    <p><strong>Phone:</strong> +91 9573448222</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/v-v-satya-sai-datta-manikanta-gowthu-41709b291/" target="_blank" rel="noopener">View profile</a></p>
+   </div>
+  </div>
+  
+  <section id="education" class="education">
+    <div class="section-header">
+      <p class="eyebrow">Academics</p>
+      <h2>Education</h2>
+    </div>
+    <div class="education-grid">
+      <article class="education-card">
+        <h3>Sri Chaitanya Junior College | 2021</h3>
+        <p class="meta">Higher Secondary Education</p>
+        <p>Kakinada, Andhra Pradesh</p>
+        <p>Percentage: 82%</p>
+      </article>
+      <article class="education-card">
+        <h3>Sri Adrsha High School | 2020</h3>
+        <p class="meta">Secondary Education</p>
+        <p>Pithapuram, Andhra Pradesh</p>
+        <p>Percentage: 88%</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Saidatta. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/v-v-satya-sai-datta-manikanta-gowthu-41709b291/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/gowthusaidatta"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/crazyboy_datta?igsh=MWx6cHE0Z2k1cnptdA=="><i class="fa-brands fa-instagram"></i></a>
+     
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['Backend Engineering', 'Web Development', 'AWS & Cloud', 'React.js & Firebase', 'Problem Solving'],
+      typeSpeed: 25,
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "optimize-images": "npx imagemin \"images_&_logos/*.{jpg,png,jpeg}\" --out-dir=public/images_optimized",
+    "serve-dist": "npx http-server ./dist -p 8080"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "imagemin-cli": "^7.0.0",
+    "http-server": "^14.1.1"
+  }
+}

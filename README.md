@@ -1,93 +1,115 @@
-# Sai Datta Manikanta Gowthu - Portfolio Website
+# Sai Datta Manikanta Gowthu — Portfolio
 
-A responsive personal portfolio website built from scratch using HTML, CSS, and JavaScript. The project features a clean UI, responsive navigation, smooth animations, parallax effects, and accessibility-focused motion handling.
+This repository contains a personal portfolio ported to a Vite + React application. It preserves the original responsive design, parallax decorations, and on-scroll reveal animations while moving styles and scripts into the `src/` directory for SPA workflow.
 
 ---
 
-## Tech Stack
+## Tech
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
-- Font Awesome
+- React 18
+- Vite
+- CSS (global `src/styles.css`)
+- Font Awesome icons
 
 ---
 
 ## Features
 
-- Responsive single-page portfolio layout
-- Smooth scroll navigation
-- Scroll-triggered reveal animations
-- Subtle parallax effects
-- Mobile-friendly design
-- Reduced-motion accessibility support
-- Sections for:
-  - Hero
-  - About
-  - Skills
-  - Projects
-  - Experience
-  - Profiles
-  - Contact
+- Responsive portfolio layout for mobile / tablet / desktop
+- Parallax background elements and on-scroll reveals
+- Sections: Hero, About, Skills, Projects, Experience, Certifications, Profiles, Contact
+- Reduced-motion support
 
 ---
 
-## Live Demo
+## Local development
 
-- https://gowthusaidatta.github.io/my_project/
+1. Install dependencies
+
+```bash
+npm install
+```
+
+2. Run dev server
+
+```bash
+npm run dev
+```
+
+3. Build for production
+
+```bash
+npm run build
+```
 
 ---
 
-## Local Setup
+## Image optimization
 
-### Clone the Repository
+We include a helper script to convert raster images to optimized WebP/size variants.
 
-```bash
-git clone https://github.com/gowthusaidatta/my_project.git
-```
-
-### Open the Project Folder
+- Install dev dependencies:
 
 ```bash
-cd my_project
+npm install
 ```
 
-### Run a Local Server
-
-Using Node.js:
+- Run the optimizer (outputs to `public/images_optimized`):
 
 ```bash
-npx http-server -p 8000
+npm run optimize-images
 ```
 
-Or using Python:
+Replace images in your components with the optimized files from `public/images_optimized` and use `loading="lazy"` for non-hero images.
+
+## Docker (production)
+
+Build and run the multi-stage Docker image locally:
 
 ```bash
-python -m http.server 8000
+# build
+docker build -t portfolio:latest .
+# run
+docker run -p 8080:80 portfolio:latest
 ```
 
-Then open:
+The Dockerfile builds the app and serves the static `dist` folder with nginx using an SPA-safe config.
 
-```text
-http://localhost:8000
-```
+## Continuous Integration
 
-in your browser.
+A GitHub Actions workflow (`.github/workflows/ci.yml`) is included. On push to `main` it will:
+- install dependencies
+- build the app
+- serve `dist` and run a headless Lighthouse audit
+- upload `lighthouse-report.html` as an artifact
+
+You can view the Lighthouse report artifact from the workflow run to inspect performance metrics.
+
+
+The app is served by Vite and mounts in `index.html` to the `#root` element.
 
 ---
 
-## Project Notes
+## Project structure
 
-- Built as a personal portfolio project.
-- Designed with performance and responsive behavior in mind.
-- Animations use transform and opacity for smoother rendering.
-- Accessibility considerations include reduced-motion support.
+- `index.html` — Vite entry (minimal head + `<div id="root"></div>`)
+- `src/main.jsx` — React entrypoint
+- `src/App.jsx` — App component (monolithic port; planned componentization)
+- `src/styles.css` — Global styles
+- `src/script.js` — Small helpers (initUI) used for reveals/parallax (planned to port to React hooks)
+
+---
+
+## Next steps / TODO
+
+- Componentize `src/App.jsx` into smaller React components
+- Port `src/script.js` behavior into React `useEffect` hooks or adopt Framer Motion/GSAP
+- Optimize images (WebP + lazy-load) and run Lighthouse audits
+- Add Dockerfile and CI for production builds
+- Deploy to Vercel or Netlify
 
 ---
 
 ## Author
 
-Sai Datta Manikanta Gowthu
-
-- GitHub: https://github.com/gowthusaidatta
+Sai Datta Manikanta Gowthu — https://github.com/gowthusaidatta
